@@ -1,0 +1,348 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ <!--custom css-->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!--fontawesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--bootstrap css-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<script type="text/javascript">
+  window.onload=function(e){
+
+var olcua=document.getElementById("olcua");
+var olcub=document.getElementById("olcub");
+var olcuc=document.getElementById("olcuc");
+var olcud=document.getElementById("olcud");
+var sonuc=document.getElementById("sonuc");
+var hesapla=document.getElementById("hesapla");
+var sonucYaz=document.getElementById("sonucYaz");
+
+hesapla.onclick=function(){
+if(document.getElementById("sekil1").selected){
+sonuc = 2*3.14*Number(olcua.value);
+}
+else if(document.getElementById("sekil2").selected){
+  sonuc=3*Number(olcua.value);
+}
+else if(document.getElementById("sekil3").selected){
+  sonuc=2*Number(olcua.value)+Number(olcub.value);
+}
+else if(document.getElementById("sekil4").selected){
+  sonuc=Number(olcua.value)+Number(olcub.value)+Number(olcuc.value);
+}
+else if(document.getElementById("sekil5").selected){
+  sonuc=2*(Number(olcua.value)+Number(olcub.value));
+}
+else if(document.getElementById("sekil6").selected){
+ sonuc=4*Number(olcua.value); 
+}
+else if(document.getElementById("sekil7").selected){
+ sonuc=4*Number(olcua.value); 
+}
+else if (document.getElementById("sekil8").selected) {
+  sonuc=2*(Number(olcua.value)+Number(olcub.value));
+}
+else if(document.getElementById("sekil9").selected){
+  sonuc=(2*Number(olcuc.value))+Number(olcua.value)+Number(olcub.value);
+}
+else if(document.getElementById("sekil10").selected){
+  sonuc=Number(olcua.value)+Number(olcub.value)+Number(olcuc.value)+Number(olcud.value);
+}
+else if(document.getElementById("sekil11").selected){
+  sonuc= 5*Number(olcua.value);
+}
+else if(document.getElementById("sekil12").selected){
+    sonuc= 6*Number(olcua.value);
+
+}
+else if(document.getElementById("sekil13").selected){
+    sonuc= 7*Number(olcua.value);
+
+}
+else if(document.getElementById("sekil14").selected){
+    sonuc= 8*Number(olcua.value);
+
+}
+else if(document.getElementById("sekil15").selected){
+    sonuc= (2*3.14)*(0.5*(Number(olcua.value)**2+Number(olcub.value)**2))**0.5;
+
+}
+
+sonucYaz.textContent= "Cevap = " + sonuc;
+
+}
+
+
+  };
+</script>
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="color: #343a40;">
+  <div class="container-fluid">
+   <a href="index.html"> <img src="logo.jpg" class="navbar-brand" href="" style="color:#ffc107;"></img></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNavDarkDropdown" >
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:#ffc107;">
+            Eğitim & Sınav
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="dersnotuhesaplama.html"style="color:#ffc107;">Ders Notu Hesaplama</a></li>
+            <li><a class="dropdown-item" href="lisemezuniyet.html"style="color:#ffc107;">Lise Mezuniyet Puanı Hesaplama</a></li>
+            <li><a class="dropdown-item" href="uninothesaplama.html"style="color:#ffc107;">Üniversite Not Ortalaması Hesaplama</a></li>
+            <li><a class="dropdown-item" href="aleshesaplama.html"style="color:#ffc107;">ALES Hesaplama</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavDarkDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:#ffc107;">
+            Finans & Vergi
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="basitfaiz.html" style="color:#ffc107;">Basit Faiz Hesaplama</a></li>
+            <li><a class="dropdown-item" href="bilesikfaizhesaplam.html" style="color:#ffc107;">Bileşik Faiz Hesaplama</a></li>
+            <li><a class="dropdown-item" href="kdvhesaplama.html" style="color:#ffc107;">KDV Hesaplama</a></li>
+            <li><a class="dropdown-item" href="indirim.html" style="color:#ffc107;">İndirim Hesaplama</a></li>
+            <li><a class="dropdown-item" href="zekâthesaplama.html" style="color:#ffc107;">Zekât Hesaplama</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavDarkDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"style="color:#ffc107;">
+            Sağlık
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="gunlukkalori.html"style="color:#ffc107;">Günlük Kalori İhtiyacı</a></li>
+            <li><a class="dropdown-item" href="vkihesap.html"style="color:#ffc107;">Vücut Kitle Endeksi Hesaplama</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+      
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavDarkDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"style="color:#ffc107;">
+            Burç & Astroloji
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="burchesap.html"style="color:#ffc107;">Burç Hesaplama</a></li>
+            <li><a class="dropdown-item" href="yukselenburc.html"style="color:#ffc107;">Yükselen Burcu Hesaplama</a></li>
+
+          </ul>
+        </li>
+      </ul>
+    </div>
+ <div class="collapse navbar-collapse justify-content-center" id="navbarNavDarkDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"style="color:#ffc107;">
+            Alan & Çevre & Hacim
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="alanhesaplama.html"style="color:#ffc107;">Alan Hesaplamaları</a></li>
+            <li><a class="dropdown-item" href="cevrehesaplama.html"style="color:#ffc107;">Çevre Hesaplamaları</a></li>
+            <li><a class="dropdown-item" href="hacimhesapla.html"style="color:#ffc107;">Hacim Hesaplamaları</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavDarkDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"style="color:#ffc107;">
+            Matematik
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="koklusayi.html"style="color:#ffc107;">Köklü Sayı Hesaplama</a></li>
+            <li><a class="dropdown-item" href="uslusayi.html"style="color:#ffc107;">Üslü Sayı Hesaplama</a></li>
+            <li><a class="dropdown-item" href="faktoriyelhesap.html"style="color:#ffc107;">Faktöriyel Hesaplama</a></li>
+            <li><a class="dropdown-item" href="altinoranhesap.html"style="color:#ffc107;">Altın Oran Hesaplama</a></li>
+            <li><a class="dropdown-item" href="aritmetikortalama.html"style="color:#ffc107;">Aritmetik Ortalama Hesaplama</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+      
+  
+     
+</nav>
+<style> body{background-color: #212529;} form.hnarac {margin:0;padding:0;color:#FFC107; } form.hnarac > fieldset{background-color:#343A40;clear:both;min-width:inherit;padding:15px;margin:20px 0;border:1px solid #FFC107;border-radius:16px;} form.hnarac > fieldset > legend{background-color:#FFC107;color:#000000;border-radius:8px;line-height: 1;cursor:default;margin: 0 8px;padding:8px;font-weight:bold;} form.hnarac em {color: #ff0000;font-weight:bold;} form.hnarac > fieldset > ol{padding:0px;margin:0px;list-style-type: none;} form.hnarac > fieldset > ol > li{padding:7px;margin:0;display:-webkit-box;display:-ms-flexbox;display:flex;  -ms-flex-wrap: wrap;flex-wrap: wrap;} form.hnarac > fieldset > ol > li > label{font-weight:bold;min-width:180px;white-space:nowrap;cursor:auto;} form.hnarac > fieldset > ol.narrowest > li > label{min-width:130px;} form.hnarac > fieldset > ol.narrower > li > label{min-width:150px;} form.hnarac > fieldset > ol.narrow > li > label{min-width:170px;} form.hnarac > fieldset > ol.wide > li > label{min-width:190px;} form.hnarac > fieldset > ol.wider > li > label{min-width:220px;} form.hnarac > fieldset > ol.widest > li > label{min-width:250px;} form.hnarac > fieldset > ol > li input[type=number], form.hnarac > fieldset > ol > li input[type=text], form.hnarac > fieldset > ol > li textarea, form.hnarac > fieldset > ol > li select {padding:6px;box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.08);border: 1px solid #aaaaaa;margin:0 5px;} form.hnarac > fieldset > ol > li input[type=radio] {width:13px;height:13px;cursor: pointer;} form.hnarac > fieldset > ol > li input[type=checkbox], form.hnarac > fieldset > ol > li label{cursor: pointer;} form.hnarac > fieldset > ol > li input[type=number] {-moz-appearance: textfield;} form.hnarac > fieldset > ol > li input[type=number]::-webkit-inner-spin-button, form.hnarac > fieldset > ol > li input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none;margin: 0} form.hnarac > fieldset > ol > li select {cursor:pointer;max-width:100%;} form.hnarac > fieldset > ol > li textarea {width:100%;height:200px;} form.hnarac > fieldset > ol > li > fieldset {margin:0 5px 0 0;padding:0;border:0;} form.hnarac > fieldset > ol > li > fieldset > label {padding: 7px 0;display:block;} form.hnarac > fieldset > ol > li > fieldset > label:first-child {padding-top:4px;} form.hnarac > fieldset > ol > li .illabel > label, form.hnarac > fieldset > ol > li .illabel > label :first-child {display:inline-block;padding:0;} form.hnarac > fieldset .buttons {display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack: distribute;justify-content:space-around;margin:20px 0;} form.hnarac > fieldset .buttons > button {position:relative;overflow:hidden;cursor:pointer;border:0;border-radius: 4px;padding: 15px 30px;font-size:18px;font-weight:bold; box-shadow: 2px 2px 7px #cccccc;} form.hnarac > fieldset .buttons > button[type=submit] {background-color:#FFC107;color:#FFFFFF;} form.hnarac > fieldset .buttons > button[type=reset] {background-color:#FFC107;color:#FFFFFF;} form.hnarac > fieldset .notlar {margin: 8px;} form.hnarac > fieldset .embedlink {float: right;} form.hnarac > fieldset > ol > li .iw1{width:37px} form.hnarac > fieldset > ol > li .iw2{width:40px} form.hnarac > fieldset > ol > li .iw3{width:44px} form.hnarac > fieldset > ol > li .iw4{width:48px} form.hnarac > fieldset > ol > li .iw5{width:52px} form.hnarac > fieldset > ol > li .iw6{width:56px} form.hnarac > fieldset > ol > li .iw7{width:60px} form.hnarac > fieldset > ol > li .iw8{width:64px} form.hnarac > fieldset > ol > li .iw9{width:68px} form.hnarac > fieldset > ol > li .orn{padding-left: 4px;} form.hnarac > fieldset > ol > li .neg{color:#EF0000;font-weight:bold;} .ac-renderer{position: absolute;border: 1px solid #ccc;margin-top: -1px;max-width: 90%;} .ac-row {white-space: nowrap;position: relative;cursor: pointer;padding: 5px;background-color: #fff;overflow: hidden !important;text-overflow: ellipsis;} .ac-row .suffix {font-size:.8em;color:#ccc;padding:.1em 0 .1em 5px;} .ac-row .type {display:none;} .ac-highlighted {font-weight: bold;} .ac-active {background-color: #eee;} </style>
+
+<form method="post" rel="nofollow" action="" target="" class="hnarac" onsubmit=""><fieldset> <legend>Çevre Hesaplama Aracı</legend> <div class="notlar"><em>*</em> Doldurulması zorunlu alanlar.</div> <ol class="widest"> <li id="li_sekil"> <label><em>*</em> Şekil:</label> <select name="sekil" id="sekil" onchange="sekilsecim()"> <option selected="selected" value="0">Lütfen seçiniz</option> <option value="1"id="sekil1">Daire</option> <option value="2"id="sekil2">Eşkenar Üçgen</option> <option value="3"id="sekil3">İkizkenar Üçgen</option> <option value="4"id="sekil4">Çeşitkenar Üçgen</option> <option value="5"id="sekil5">Dikdörtgen</option> <option value="6"id="sekil6">Kare</option> <option value="7"id="sekil7">Eşkenar Dörtgen</option> <option value="8"id="sekil8">Paralelkenar</option> <option value="9"id="sekil9">İkizkenar Yamuk</option> <option value="10"id="sekil10">Çeşitkenar Yamuk</option> <option value="11"id="sekil11">Düzgün (eşkenar) beşgen</option> <option value="12"id="sekil12">Düzgün (eşkenar) altıgen</option> <option value="13"id="sekil13">Düzgün (eşkenar) yedigen</option> <option value="14"id="sekil14">Düzgün (eşkenar) sekizgen</option> <option value="15"id="sekil15">Elips</option> </select> </li> <li id="li_onizleme" style="display:none;"> <label for="img_sekil"></label> <img id="img_sekil" style="width:100px;"> </li> <li id="li_olcua" style="display:none;"> <label for="olcua"><em>*</em> <span id="olcuaadi">Kenar Uzunluğu (a)</span>:</label> <fieldset><input type="number" id="olcua" name="olcua" step="0.0000000001" class="iw6"> cm</fieldset> <span class="orn">(Örn. 124,58)</span> </li> <li id="li_olcub" style="display:none;"> <label for="olcub"><em>*</em> <span id="olcubadi">Kenar Uzunluğu (b)</span>:</label> <fieldset><input type="number" id="olcub" name="olcub" step="0.0000000001" class="iw6"> cm</fieldset> <span class="orn">(Örn. 80,46)</span> </li> <li id="li_olcuc" style="display:none;"> <label for="olcuc"><em>*</em> <span id="olcucadi">Kenar Uzunluğu (c)</span>:</label> <fieldset><input type="number" id="olcuc" name="olcuc" step="0.0000000001" class="iw6"> cm</fieldset> <span class="orn">(Örn. 30,8)</span> </li> <li id="li_olcud" style="display:none;"> <label for="olcud"><em>*</em> <span id="olcudadi">Kenar Uzunluğu (d)</span>:</label> <fieldset><input type="number" id="olcud" name="olcud" step="0.0000000001" class="iw6"> cm</fieldset> <span class="orn">(Örn. 42,5)</span> </li> </ol>
+
+
+<div id="sonucYaz"></div>
+
+ <div class="buttons"><button type="button" id="hesapla" style="background-color:#FFC107; color:white;">Hesapla</button> <button type="reset">Temizle</button></div> </fieldset>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div> <b style="font-size: 24px;">Çevre nedir?
+</b> <br>
+Düzlem üzerindeki bir şekli sınırlayan çizginin toplam uzunluğudur.
+</div>
+<br>
+<br>
+<br>
+<div>
+ <b style="font-size: 24px;"> Dikdörtgenin çevresi nasıl hesaplanır?
+</b> <br>
+Taban genişliği ile yüksekliğin toplamının iki katını ifade eden aşağıdaki formülle hesaplanır.
+<br>
+Dikdörtgenin Çevresi = a + a + h + h = 2 x (a + h)
+</div>
+<br>
+<br>
+<br>
+<div>
+  <b style="font-size: 24px;">Karenin çevre hesabı nasıl yapılır?
+
+</b> <br>
+Kare, taban genişliği ve yüksekliği eşit uzunlukta olan bir dikdörtgendir. Karenin tüm kenarları birbirine eşit olduğundan, çevresi aşağıdaki formülle hesaplanmaktadır.
+<br>
+Karenin Çevresi = a + a + a + a = 4 x a
+
+</div>
+<br>
+<br>
+<br> </form>
+
+
+<script>
+function sekilsecim(){
+  var ssekil = document.getElementById("sekil");
+  var sekil = ssekil.options[ssekil.selectedIndex].value;
+
+  if(sekil==1){
+    document.getElementById('li_olcua').style.cssText='display:list-item;display:flex;';
+    document.getElementById('li_olcub').style.display='none';
+    document.getElementById('li_olcuc').style.display='none';
+    document.getElementById('li_olcud').style.display='none';
+    document.getElementById('olcuaadi').innerHTML="Yarıçap (r)";
+  } else if(sekil==3){
+    document.getElementById('li_olcua').style.cssText='display:list-item;display:flex;';
+    document.getElementById('li_olcub').style.cssText='display:list-item;display:flex;';
+    document.getElementById('li_olcuc').style.display='none';
+    document.getElementById('li_olcud').style.display='none';
+    document.getElementById('olcuaadi').innerHTML="İkizkenar Uzunluğu (a)";
+    document.getElementById('olcubadi').innerHTML="Taban Genişliği (b)";
+  } else if(sekil==4){
+    document.getElementById('li_olcua').style.cssText='display:list-item;display:flex;';
+    document.getElementById('li_olcub').style.cssText='display:list-item;display:flex;';
+    document.getElementById('li_olcuc').style.cssText='display:list-item;display:flex;';
+    document.getElementById('li_olcud').style.display='none';
+    document.getElementById('olcuaadi').innerHTML="Kenar Uzunluğu (a)";
+    document.getElementById('olcubadi').innerHTML="Kenar Uzunluğu (b)";
+    document.getElementById('olcucadi').innerHTML="Kenar Uzunluğu (c)";
+  } else if(sekil==5){
+    document.getElementById('li_olcua').style.cssText='display:list-item;display:flex;';
+    document.getElementById('li_olcub').style.cssText='display:list-item;display:flex;';
+    document.getElementById('li_olcuc').style.display='none';
+    document.getElementById('li_olcud').style.display='none';
+    document.getElementById('olcuaadi').innerHTML="Taban Genişliği (a)";
+    document.getElementById('olcubadi').innerHTML="Yükseklik (h)";
+  } else if(sekil==8){
+    document.getElementById('li_olcua').style.cssText='display:list-item;display:flex;';
+    document.getElementById('li_olcub').style.cssText='display:list-item;display:flex;';
+    document.getElementById('li_olcuc').style.display='none';
+    document.getElementById('li_olcud').style.display='none';
+    document.getElementById('olcuaadi').innerHTML="Kenar Uzunluğu (a)";
+    document.getElementById('olcubadi').innerHTML="Taban Genişliği (b)";
+  } else if(sekil==9){
+    document.getElementById('li_olcua').style.cssText='display:list-item;display:flex;';
+    document.getElementById('li_olcub').style.cssText='display:list-item;display:flex;';
+    document.getElementById('li_olcuc').style.cssText='display:list-item;display:flex;';
+    document.getElementById('li_olcud').style.display='none';
+    document.getElementById('olcuaadi').innerHTML="Taban Genişliği (a)";
+    document.getElementById('olcubadi').innerHTML="Tavan Genişliği (b)";
+    document.getElementById('olcucadi').innerHTML="İkizkenar Uzunluğu (c)";
+  } else if(sekil==10){
+    document.getElementById('li_olcua').style.cssText='display:list-item;display:flex;';
+    document.getElementById('li_olcub').style.cssText='display:list-item;display:flex;';
+    document.getElementById('li_olcuc').style.cssText='display:list-item;display:flex;';
+    document.getElementById('li_olcud').style.cssText='display:list-item;display:flex;';
+    document.getElementById('olcuaadi').innerHTML="Taban Genişliği (a)";
+    document.getElementById('olcubadi').innerHTML="Kenar Uzunluğu (b)";
+    document.getElementById('olcucadi').innerHTML="Tavan Genişliği (c)";
+    document.getElementById('olcudadi').innerHTML="Kenar Uzunluğu (d)";
+  } else if(sekil==2 || sekil==6 || sekil==7 || sekil==11 || sekil==12 || sekil==13 || sekil==14){
+    document.getElementById('li_olcua').style.cssText='display:list-item;display:flex;';
+    document.getElementById('li_olcub').style.display='none';
+    document.getElementById('li_olcuc').style.display='none';
+    document.getElementById('li_olcud').style.display='none';
+    document.getElementById('olcuaadi').innerHTML="Bir Kenarın Uzunluğu (a)";
+  } else if(sekil==15){
+    document.getElementById('li_olcua').style.cssText='display:list-item;display:flex;';
+    document.getElementById('li_olcub').style.cssText='display:list-item;display:flex;';
+    document.getElementById('li_olcuc').style.display='none';
+    document.getElementById('li_olcud').style.display='none';
+    document.getElementById('olcuaadi').innerHTML="Yatay Yarıçap (r)";
+    document.getElementById('olcubadi').innerHTML="Dikey Yarıçap (a)";
+  } else {
+    document.getElementById('li_olcua').style.display='none';
+    document.getElementById('li_olcub').style.display='none';
+    document.getElementById('li_olcuc').style.display='none';
+    document.getElementById('li_olcud').style.display='none';
+  }
+
+  if(sekil>=1 && sekil<=15){
+    var sekiller = ["cember","eskenar-ucgen","ikizkenar-ucgen","cesitkenar-ucgen","dikdortgen","kare","eskenar-dortgen","paralelkenar","ikizkenar-yamuk","cesitkenar-yamuk","duzgun-besgen","duzgun-altigen","duzgun-yedigen","duzgun-sekizgen","elips"];
+    document.getElementById("img_sekil").src = "https://www.hesaplama.net/images/sekiller/"+sekiller[sekil-1]+".svg";
+    document.getElementById('li_onizleme').style.cssText='display:list-item;display:flex;';
+  } else
+    document.getElementById('li_onizleme').style.display='none';
+}
+sekilsecim();
+</script>
+
+
+
+
+  <footer class="bg-dark border-top" id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h4 class="text-center p-5 border-bottom" style="color:#ffc107;">Sosyal Medya Hesaplarımız</h4>
+          <nav class="text-center p-4">
+            <a href="#" class="m-5 text-primary"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#" class="m-5 text-danger"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="#" class="m-5 text-info"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#" class="m-5 text-danger"><i class="fab fa-youtube fa-2x"></i></a>
+          </nav>
+        </div>
+        <div class="col-md-6">
+          <h4 class="text-center p-5"style="color:#ffc107;">Bize Abone Olun!</h4>
+          <div class="input-group mb-3 w-75 float-end">
+            <input type="text" class="form-control" placeholder="Mailiniz" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-warning" type="button" id="button-addon2">Abone Ol</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright bg-dark text-center pt-5"style="color:#ffc107;">Tüm Hakları Saklıdır © HEB</div>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ <!--custom css-->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!--fontawesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--bootstrap css-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <script type="text/javascript">
+   window.onload=function(e){ 
+var sonuc;
+var hesapla=document.getElementById("hesapla");
+var sonucYaz=document.getElementById("sonucYaz");
+var gun=document.getElementById("gun");
+var ay=document.getElementById("ay");
+var yil=document.getElementById("yil");
+hesapla.onclick=function(){
+if((Number(ay.value)==2 && Number(gun.value)>18 )||(Number(ay.value)==3 && Number(gun.value)<21))
+{
+ sonuc= "Balık";
+ }
+ else if((Number(ay.value)==3 && Number(gun.value)>20)||(Number(ay.value)==4 && Number(gun.value)<21))
+ {
+sonuc= "Koç";
+  }
+ else if((Number(ay.value)==4 && Number(gun.value)>20)||(Number(ay.value)==5 && Number(gun.value)<22))
+{
+sonuc= "Boğa";
+
+}
+ 
+ else if((Number(ay.value)==5 && Number(gun.value)>21)||(Number(ay.value)==6 && Number(gun.value)<22))
+ 
+ {
+ sonuc= "İkizler";
+ 
+ }
+ 
+ else if((Number(ay.value)==6 && Number(gun.value)>21)||(Number(ay.value)==7 && Number(gun.value)<24))
+ {
+ sonuc= "Yengeç";
+
+ }
+ else if((Number(ay.value)==7 && Number(gun.value)>23)||(Number(ay.value)==8 && Number(gun.value)<24))
+ {
+sonuc= "Aslan";
+ }
+ else if((Number(ay.value)==8 && Number(gun.value)>23)||(Number(ay.value)==9 && Number(gun.value)<24))
+ {
+sonuc= "Başak";
+ 
+ }
+ else if((Number(ay.value)==9 && Number(gun.value)>23)||(Number(ay.value)==10 && Number(gun.value)<24))
+{
+sonuc= "Terazi";
+ 
+}
+ 
+ else if((Number(ay.value)==10 && Number(gun.value)>23)||(Number(ay.value)==11 && Number(gun.value)<23))
+ {
+sonuc= "Akrep";
+  
+ }
+ 
+ else if((Number(ay.value)==11 && Number(gun.value)>22)||(Number(ay.value)==12 && Number(gun.value)<23))
+ {sonuc= "Yay";
+ }
+ 
+ else if((Number(ay.value)==12 && Number(gun.value)>22)||(Number(ay.value)==1 && Number(gun.value)<21))
+ {
+  sonuc= "Oğlak";
+ }
+ else if((Number(ay.value)==1 && Number(gun.value)>20)||(Number(ay.value)==2 && Number(gun.value)<19))
+ {
+  sonuc= "Kova";
+ }
+ sonucYaz.textContent= "Burcunuz : " + sonuc;
+}
+};
+
+
+  </script>
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="color: #343a40;">
+  <div class="container-fluid">
+   <a href="index.html"> <img src="logo.jpg" class="navbar-brand" href="" style="color:#ffc107;"></img></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNavDarkDropdown" >
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:#ffc107;">
+            Eğitim & Sınav
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="dersnotuhesaplama.html"style="color:#ffc107;">Ders Notu Hesaplama</a></li>
+            <li><a class="dropdown-item" href="lisemezuniyet.html"style="color:#ffc107;">Lise Mezuniyet Puanı Hesaplama</a></li>
+            <li><a class="dropdown-item" href="uninothesaplama.html"style="color:#ffc107;">Üniversite Not Ortalaması Hesaplama</a></li>
+            <li><a class="dropdown-item" href="aleshesaplama.html"style="color:#ffc107;">ALES Hesaplama</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavDarkDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:#ffc107;">
+            Finans & Vergi
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="basitfaiz.html" style="color:#ffc107;">Basit Faiz Hesaplama</a></li>
+            <li><a class="dropdown-item" href="bilesikfaizhesaplam.html" style="color:#ffc107;">Bileşik Faiz Hesaplama</a></li>
+            <li><a class="dropdown-item" href="kdvhesaplama.html" style="color:#ffc107;">KDV Hesaplama</a></li>
+            <li><a class="dropdown-item" href="indirim.html" style="color:#ffc107;">İndirim Hesaplama</a></li>
+            <li><a class="dropdown-item" href="zekâthesaplama.html" style="color:#ffc107;">Zekât Hesaplama</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavDarkDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"style="color:#ffc107;">
+            Sağlık
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="gunlukkalori.html"style="color:#ffc107;">Günlük Kalori İhtiyacı</a></li>
+            <li><a class="dropdown-item" href="vkihesap.html"style="color:#ffc107;">Vücut Kitle Endeksi Hesaplama</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+      
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavDarkDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"style="color:#ffc107;">
+            Burç & Astroloji
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="burchesap.html"style="color:#ffc107;">Burç Hesaplama</a></li>
+            <li><a class="dropdown-item" href="yukselenburc.html"style="color:#ffc107;">Yükselen Burcu Hesaplama</a></li>
+
+          </ul>
+        </li>
+      </ul>
+    </div>
+ <div class="collapse navbar-collapse justify-content-center" id="navbarNavDarkDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"style="color:#ffc107;">
+            Alan & Çevre & Hacim
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="alanhesaplama.html"style="color:#ffc107;">Alan Hesaplamaları</a></li>
+            <li><a class="dropdown-item" href="cevrehesaplama.html"style="color:#ffc107;">Çevre Hesaplamaları</a></li>
+            <li><a class="dropdown-item" href="hacimhesapla.html"style="color:#ffc107;">Hacim Hesaplamaları</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavDarkDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"style="color:#ffc107;">
+            Matematik
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="koklusayi.html"style="color:#ffc107;">Köklü Sayı Hesaplama</a></li>
+            <li><a class="dropdown-item" href="uslusayi.html"style="color:#ffc107;">Üslü Sayı Hesaplama</a></li>
+            <li><a class="dropdown-item" href="faktoriyelhesap.html"style="color:#ffc107;">Faktöriyel Hesaplama</a></li>
+            <li><a class="dropdown-item" href="altinoranhesap.html"style="color:#ffc107;">Altın Oran Hesaplama</a></li>
+            <li><a class="dropdown-item" href="aritmetikortalama.html"style="color:#ffc107;">Aritmetik Ortalama Hesaplama</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+      
+  
+     
+</nav>
+
+<style> body{background-color: #212529;} form.hnarac {margin:0;padding:0;color:#FFC107; } form.hnarac > fieldset{background-color:#343A40;clear:both;min-width:inherit;padding:15px;margin:20px 0;border:1px solid #FFC107;border-radius:16px;} form.hnarac > fieldset > legend{background-color:#FFC107;color:#000000;border-radius:8px;line-height: 1;cursor:default;margin: 0 8px;padding:8px;font-weight:bold;} form.hnarac em {color: #ff0000;font-weight:bold;} form.hnarac > fieldset > ol{padding:0px;margin:0px;list-style-type: none;} form.hnarac > fieldset > ol > li{padding:7px;margin:0;display:-webkit-box;display:-ms-flexbox;display:flex;  -ms-flex-wrap: wrap;flex-wrap: wrap;} form.hnarac > fieldset > ol > li > label{font-weight:bold;min-width:180px;white-space:nowrap;cursor:auto;} form.hnarac > fieldset > ol.narrowest > li > label{min-width:130px;} form.hnarac > fieldset > ol.narrower > li > label{min-width:150px;} form.hnarac > fieldset > ol.narrow > li > label{min-width:170px;} form.hnarac > fieldset > ol.wide > li > label{min-width:190px;} form.hnarac > fieldset > ol.wider > li > label{min-width:220px;} form.hnarac > fieldset > ol.widest > li > label{min-width:250px;} form.hnarac > fieldset > ol > li input[type=number], form.hnarac > fieldset > ol > li input[type=text], form.hnarac > fieldset > ol > li textarea, form.hnarac > fieldset > ol > li select {padding:6px;box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.08);border: 1px solid #aaaaaa;margin:0 5px;} form.hnarac > fieldset > ol > li input[type=radio] {width:13px;height:13px;cursor: pointer;} form.hnarac > fieldset > ol > li input[type=checkbox], form.hnarac > fieldset > ol > li label{cursor: pointer;} form.hnarac > fieldset > ol > li input[type=number] {-moz-appearance: textfield;} form.hnarac > fieldset > ol > li input[type=number]::-webkit-inner-spin-button, form.hnarac > fieldset > ol > li input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none;margin: 0} form.hnarac > fieldset > ol > li select {cursor:pointer;max-width:100%;} form.hnarac > fieldset > ol > li textarea {width:100%;height:200px;} form.hnarac > fieldset > ol > li > fieldset {margin:0 5px 0 0;padding:0;border:0;} form.hnarac > fieldset > ol > li > fieldset > label {padding: 7px 0;display:block;} form.hnarac > fieldset > ol > li > fieldset > label:first-child {padding-top:4px;} form.hnarac > fieldset > ol > li .illabel > label, form.hnarac > fieldset > ol > li .illabel > label :first-child {display:inline-block;padding:0;} form.hnarac > fieldset .buttons {display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack: distribute;justify-content:space-around;margin:20px 0;} form.hnarac > fieldset .buttons > button {position:relative;overflow:hidden;cursor:pointer;border:0;border-radius: 4px;padding: 15px 30px;font-size:18px;font-weight:bold; box-shadow: 2px 2px 7px #cccccc;} form.hnarac > fieldset .buttons > button[type=submit] {background-color:#FFC107;color:#FFFFFF;} form.hnarac > fieldset .buttons > button[type=reset] {background-color:#FFC107;color:#FFFFFF;} form.hnarac > fieldset .notlar {margin: 8px;} form.hnarac > fieldset .embedlink {float: right;} form.hnarac > fieldset > ol > li .iw1{width:37px} form.hnarac > fieldset > ol > li .iw2{width:40px} form.hnarac > fieldset > ol > li .iw3{width:44px} form.hnarac > fieldset > ol > li .iw4{width:48px} form.hnarac > fieldset > ol > li .iw5{width:52px} form.hnarac > fieldset > ol > li .iw6{width:56px} form.hnarac > fieldset > ol > li .iw7{width:60px} form.hnarac > fieldset > ol > li .iw8{width:64px} form.hnarac > fieldset > ol > li .iw9{width:68px} form.hnarac > fieldset > ol > li .orn{padding-left: 4px;} form.hnarac > fieldset > ol > li .neg{color:#EF0000;font-weight:bold;} .ac-renderer{position: absolute;border: 1px solid #ccc;margin-top: -1px;max-width: 90%;} .ac-row {white-space: nowrap;position: relative;cursor: pointer;padding: 5px;background-color: #fff;overflow: hidden !important;text-overflow: ellipsis;} .ac-row .suffix {font-size:.8em;color:#ccc;padding:.1em 0 .1em 5px;} .ac-row .type {display:none;} .ac-highlighted {font-weight: bold;} .ac-active {background-color: #eee;} </style>
+
+<form method="post" rel="nofollow" action="" target="" class="hnarac" onsubmit=""><fieldset> <legend>Burç Hesaplama Aracı</legend> <div class="notlar"><em>*</em> Doldurulması zorunlu alanlar.</div> <ol> <li id="li_gun"> <label for="gun"><em>*</em> Doğum Tarihi:</label> <fieldset><select id="gun" size="1" name="gun"> <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select>&nbsp;<select size="1" name="ay"id="ay"> <option value="1">Ocak</option><option value="2">Şubat</option><option value="3">Mart</option><option value="4">Nisan</option><option value="5">Mayıs</option><option value="6">Haziran</option><option value="7">Temmuz</option><option value="8">Ağustos</option><option value="9">Eylül</option><option value="10">Ekim</option><option value="11">Kasım</option><option value="12">Aralık</option></select>&nbsp;<select size="1" name="yil"> <option value="2022">2022</option><option value="2021">2021</option><option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option><option value="1999">1999</option><option value="1998">1998</option><option value="1997">1997</option><option value="1996">1996</option><option value="1995">1995</option><option value="1994">1994</option><option value="1993">1993</option><option value="1992">1992</option><option value="1991">1991</option><option value="1990">1990</option><option value="1989">1989</option><option value="1988">1988</option><option value="1987">1987</option><option value="1986">1986</option><option value="1985">1985</option><option value="1984">1984</option><option value="1983">1983</option><option value="1982">1982</option><option value="1981">1981</option><option value="1980">1980</option><option value="1979">1979</option><option value="1978">1978</option><option value="1977">1977</option><option value="1976">1976</option><option value="1975">1975</option><option value="1974">1974</option><option value="1973">1973</option><option value="1972">1972</option><option value="1971">1971</option><option value="1970">1970</option><option value="1969">1969</option><option value="1968">1968</option><option value="1967">1967</option><option value="1966">1966</option><option value="1965">1965</option><option value="1964">1964</option><option value="1963">1963</option><option value="1962">1962</option><option value="1961">1961</option><option value="1960">1960</option><option value="1959">1959</option><option value="1958">1958</option><option value="1957">1957</option><option value="1956">1956</option><option value="1955">1955</option><option value="1954">1954</option><option value="1953">1953</option><option value="1952">1952</option><option value="1951">1951</option><option value="1950">1950</option></select> </fieldset> </li> </ol>
+
+
+<div id="sonucYaz"></div>
+
+ <div class="buttons"><button type="button" id="hesapla" style="background-color:#FFC107; color:white;">Hesapla</button> <button type="reset">Temizle</button></div> </fieldset>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div> <b style="font-size: 24px;">Burç nedir?
+
+</b> <br>
+Sözlük açıklamasıyla zodyak üzerinde yer alan on iki takımyıldıza verilen ortak ad manasına gelir. Ateş, toprak, hava ve su olmak üzere dört gruba ayrılmıştır. Her grupta üç burç bulunur. Hangi grupta olunduğunu bilerek temel kişilik özelliklerini ve tanıdığınız insanları daha iyi anlayabilirsiniz. Halk güneş burcu yerine sadece burç terimi kullanılmaktadır.
+<br>
+Ateş grubu: Koç, Aslan ve Yay
+<br>
+Toprak grubu: Boğa, Başak ve Oğlak
+<br>
+Hava grubu: İkizler, Terazi ve Kova
+<br>
+Su grubu: Yengeç, Akrep ve Balık
+</div>
+<br>
+<br>
+<br>
+<div>
+ <b style="font-size: 24px;"> Zodyak'a göre burç sırası
+</b> <br>
+İlk altı sırasıyla Koç, Boğa, İkizler, Yengeç, Aslan ve Başaktır. Ardındansa Terazi, Akrep, Yay, Oğlak, Kova ve Balık gelir. Bu sıralamadan kendi burcunuzun, burçlar kuşağı zodyakta kaçıncı sırada olduğunu öğrenebilirsiniz.
+
+
+</div>
+<br>
+<br>
+<br>
+<div>
+  <b style="font-size: 24px;">Burç nasıl öğrenilir?
+
+</b> <br>
+Belirli tarih aralıklarıyla sınırlandırılmışlardır. Hangi burcum diye merak ediyorsanız her birine denk gelen tarih aralığını bilmeniz gerekmektedir. Örneğin 21 haziran - 23 temmuz tarihleri arasında doğan bir kişi yengeç burcuna ait olmaktadır. Yengeç, su grubunun ilk burcudur.
+
+</div>
+<br>
+<br>
+<br> </form>
+
+
+  <footer class="bg-dark border-top" id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h4 class="text-center p-5 border-bottom" style="color:#ffc107;">Sosyal Medya Hesaplarımız</h4>
+          <nav class="text-center p-4">
+            <a href="#" class="m-5 text-primary"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#" class="m-5 text-danger"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="#" class="m-5 text-info"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#" class="m-5 text-danger"><i class="fab fa-youtube fa-2x"></i></a>
+          </nav>
+        </div>
+        <div class="col-md-6">
+          <h4 class="text-center p-5"style="color:#ffc107;">Bize Abone Olun!</h4>
+          <div class="input-group mb-3 w-75 float-end">
+            <input type="text" class="form-control" placeholder="Mailiniz" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-warning" type="button" id="button-addon2">Abone Ol</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright bg-dark text-center pt-5"style="color:#ffc107;">Tüm Hakları Saklıdır © HEB</div>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>
